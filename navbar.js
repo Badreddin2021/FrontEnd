@@ -70,10 +70,10 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         .navbar {
             flex-direction: column; /* Stacks navbar items vertically */
-            align-items: center; /* Center-align the navbar items */
+            align-items: left; /* Center-align the navbar items */
         }
         .navbar a, .dropbtn {
-            padding: 10px; /* Increase padding for easier touch */
+            padding: 8px; /* Increase padding for easier touch */
         }
     }
     `;
