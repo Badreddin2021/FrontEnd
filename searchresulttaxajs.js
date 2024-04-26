@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Display the searching message
     resultsContainer.innerHTML = '<p><b>Searching...</b></p>';
 
-    const apiUrl = `http://localhost:5000/reptiles/search/taxa/${encodeURIComponent(taxa)}`;
+    const apiUrl = `http://cmsc508.com:5000/reptiles/search/taxa/${encodeURIComponent(taxa)}`;
     fetch(apiUrl)
         .then(response => {
             if (!response.ok) {

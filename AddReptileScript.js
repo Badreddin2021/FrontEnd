@@ -4,7 +4,7 @@ document.getElementById('add-reptile-form').addEventListener('submit', function(
     const formData = new FormData(e.target);
     const data = Object.fromEntries(formData.entries());
 
-    fetch('http://localhost:5000/reptiles/add', {
+    fetch('http://cmsc508.com:5000/reptiles/add', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',

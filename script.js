@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function() {
   function handleSearch() {
       var searchInput = document.getElementById('search-input');
       var query = searchInput.value;
-      var searchUrl = 'http://localhost:5000/reptiles/search/' + encodeURIComponent(query); // Adjust port and endpoint as needed
+      var searchUrl = 'http://cmsc508.com:5000/reptiles/search/' + encodeURIComponent(query); // Adjust port and endpoint as needed
 
       fetch(searchUrl)
           .then(response => response.json())

@@ -46,7 +46,7 @@ function addFooter() {
 
 document.addEventListener('DOMContentLoaded', function () {
     const params = new URLSearchParams(window.location.search);
-    const apiUrl = `http://localhost:5000/reptiles/search/advanced?${params}`;
+    const apiUrl = `http://cmsc508.com:5000/reptiles/search/advanced?${params}`;
     const container = document.getElementById('results-container');
     container.innerHTML = ''; // Clear previous results
       // Display the searching message

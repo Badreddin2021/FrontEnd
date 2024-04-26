@@ -1,7 +1,7 @@
 document.getElementById('load-reptile').addEventListener('click', function() {
     const reptileId = document.getElementById('reptile-id').value;
     if (reptileId) {
-        fetch(`http://localhost:5000/reptiles/${reptileId}`)
+        fetch(`http://cmsc508.com:5000/reptiles/${reptileId}`)
         .then(response => response.json())
         .then(data => {
             if (data.error) {

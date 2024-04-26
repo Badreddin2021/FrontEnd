@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to fetch and display reptile details
     function fetchReptileDetails(reptileId) {
-        fetch(`http://localhost:5000/reptiles/${reptileId}`)
+        fetch(`http://cmsc508.com:5000/reptiles/${reptileId}`)
             .then(response => response.json())
             .then(data => {
                 // Update the page content with the reptile details

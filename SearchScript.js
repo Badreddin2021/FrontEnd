@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', function() {
         // Display the searching message
         resultsContainer.innerHTML = '<p>Searching...</p>';
 
-        fetch(`http://127.0.0.1:5000/reptiles/search/${encodeURIComponent(query)}`)
+        fetch(`http://cmsc508.com:5000/reptiles/search/${encodeURIComponent(query)}`)
             .then(response => response.json())
             .then(data => {
                 displaySearchResults(data);
