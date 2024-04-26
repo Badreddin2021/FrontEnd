@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Reptile Database</title><header>
+</header>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <script src="navbar.js"></script>
+
+  <div class="banner">
+    <h1>SEARCH THE <br> REPTILE <br> DATABASE</h1>
+    <h2>Providing a catalog of <br> all living reptile species <br> and their classification.</h2>
+    <form class="banner-search" action="/search" method="get">
+      <input type="text" name="query" placeholder="Search..." id="search-input">
+    </form>
+    <a href="#" id="adv-search-btn" class="advanced-search-link">Advanced Search</a>
+  </div>
+
+  <div class="main-box">
+    <div class="section higher-taxa">
+      <h2>Higher Taxa</h2>
+      <div class="box-row">
+
+        <div class="box">
+          <img src="imgs/sauria.png" alt="Lizard">
+          <div class="label"><a href="#" data-taxa="Lizard" style="color: inherit; text-decoration: underline;">Lizard</a>
+          </div>
+        </div>
+
+        <div class="box">
+          <img src="imgs/snake.png" alt="Snake">
+          <div class="label"><a href="#" data-taxa="snake" style="color: inherit; text-decoration: underline;">Snake</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="imgs/tuataras.png" alt="Tuataras">
+          <div class="label"><a href="#" data-taxa="Tautaras" style="color: inherit; text-decoration: underline;">Tuataras</a>
+          </div>
+        </div>
+      </div>
+      <div class="box-row">
+        <div class="box">
+          <img src="imgs/crocodiles.png" alt="Crocodile">
+          <div class="label"><a href="#" data-taxa="crocodile" style="color: inherit; text-decoration: underline;">Crocodile</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="imgs/Viperidae.png" alt="Viperidae">
+          <div class="label"><a href="#" data-taxa="Viperidae"style="color: inherit; text-decoration: underline;">Viperidae</a>
+          </div>
+        </div>
+        <div class="box">
+          <img src="imgs/turtles.png" alt="turtle">
+          <div class="label"><a href="#" data-taxa="turtle" style="color: inherit; text-decoration: underline;">Turtle</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section news">
+      <h2>News</h2>
+      <div class="news-boxes">
+        <div class="news-box">
+          <a href="news.html" class="news-link">
+            <p>28 March 2024 -- new release</p>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Advanced Search Options</h2>
+        <form id="adv-search-form">
+            <!-- Higher Taxa Field -->
+            <label for="higher-taxa">Higher Taxa:</label>&nbsp; 
+            <input type="text" id="higher-taxa" name="higher-taxa" placeholder="Enter taxa...">
+	<br><br>
+            <!-- Genus Field -->
+            <label for="genus">Genus:</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="text" id="genus" name="genus" placeholder="Enter genus...">
+	<br><br>
+            <!-- Species Field -->
+            <label for="species">Species:</label>&nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="text" id="species" name="species" placeholder="Enter species...">
+ 	<br><br>
+            <!-- Subspecies Field -->
+            <label for="subspecies">Subspecies:</label>&nbsp; 
+            <input type="text" id="subspecies" name="subspecies" placeholder="Enter subspecies..." >
+	<br><br>
+            <!-- Author Field -->
+            <label for="author">Finder Name:</label>
+            <input type="text" id="author" name="author" placeholder="Enter author name...">
+	<br><br>
+            <!-- Year Field -->
+            <label for="year">Year:</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="text" id="year" name="year" placeholder="Enter year of publication...">
+	<br><br>
+            <!-- Common Name Field -->
+            <label for="common-name">Name:</label>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+            <input type="text" id="common-name" name="common-name" placeholder="Enter common name...">
+	<br><br>
+            <!-- Distribution Field -->
+            <label for="distribution">Distribution:</label>&nbsp; &nbsp; 
+            <input type="text" id="distribution" name="distribution" placeholder="Enter distribution details...">
+            	<br><br>
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</div>
+
+  <script src="IndexScript.js"></script>
+<script src="footer.js"></script>
+</body>
+
+</html>

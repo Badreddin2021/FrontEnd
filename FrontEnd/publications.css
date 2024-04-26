@@ -1,0 +1,66 @@
+body {
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: clamp(35px, 5vw, 70px);
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h2 {
+    font-size: clamp(15px, 5vw, 30px);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h3 {
+    font-size: clamp(10px, 5vw, 25px);
+    line-height: 1.6;
+    font-weight: lighter;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h4 {
+    font-size: clamp(8px, 5vw, 20px);
+    line-height: 1.6;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+
+    flex: 1;
+}
+
+.list-title {
+    font-weight: bold;
+}
+
+ul {
+    font-size: clamp(8px, 5vw, 16px);
+    line-height: 1.6;
+    font-weight: lighter;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p {
+    font-size: clamp(8px, 5vw, 16px);
+    line-height: 1.6;
+    font-weight: lighter;
+    margin-left: 10%;
+    margin-right: 10%;
+}

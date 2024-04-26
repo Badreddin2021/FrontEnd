@@ -1,0 +1,32 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F5F5DC; /* Light grey background */
+    color: #333; /* Dark grey text */
+}
+
+h1 {
+    color: #333;
+}
+
+#search-results {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background:#F5F5DC;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#search-results a {
+   color: black; /* Consistent link color */
+    display: block; /* Makes the entire div clickable */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#search-results a:hover {
+    background-color: #F5F2BA;
+}

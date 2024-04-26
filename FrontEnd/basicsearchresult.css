@@ -1,0 +1,73 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5DC; /* Light gray background for better contrast */
+    color: #333; /* Default text color */
+    
+}
+
+/* Styling for the navbar
+.navbar {
+    background-color: #0066cc;
+    padding: 10px 20px;
+    color: white;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+*/
+
+/* Search results container */
+#search-results {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #F5F5DC;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+     font-weight: bold; /* Makes the font bold */
+}
+
+/* Footer styling */
+footer {
+    background-color: #333; /* Dark background for the footer */
+    color: #fff; /* White text for contrast */
+    padding: 20px 50px; /* Spacing around content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em; /* Slightly smaller font size */
+}
+
+footer a {
+    color: #4da6ff; /* Light blue color for links */
+    text-decoration: none; /* No underline by default */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Underline on hover for better user experience */
+}
+
+footer p {
+    margin: auto; /* Centering the paragraph text */
+    font-size: 12px; /* Small font size for less emphasis */
+}
+
+/* Links within search results, making each result clickable */
+#search-results a {
+    display: block; /* Block display to make the links easier to click */
+    padding: 10px;
+    margin: 5px 0; /* Spacing between links */
+    background-color: #F5F5DC; /* White background */
+    color: black; /* Consistent link color */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#search-results a:hover {
+    background-color: #F5F2BA; /* Light grey background on hover */
+}
