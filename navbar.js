@@ -64,6 +64,18 @@ document.addEventListener('DOMContentLoaded', function () {
       .dropdown:hover .dropdown-content {
         display: block;
       }
+     @media (max-width: 600px) {
+        .header {
+            flex-direction: column; /* Stacks logo and navbar vertically on small screens */
+        }
+        .navbar {
+            flex-direction: column; /* Stacks navbar items vertically */
+            align-items: center; /* Center-align the navbar items */
+        }
+        .navbar a, .dropbtn {
+            padding: 10px; /* Increase padding for easier touch */
+        }
+    }
     `;
   document.head.appendChild(style);
 
