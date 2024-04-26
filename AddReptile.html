@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Reptile</title>
+    <link rel="stylesheet" href="AddReptileStyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Add New Reptile</h1>
+        <form id="add-reptile-form">
+            <label for="taxa">Taxa:</label>
+            <input type="text" id="taxa" name="taxa" required>
+
+            <label for="subspecies_1">Subspecies 1:</label>
+            <input type="text" id="subspecies_1" name="subspecies_1" required>
+
+            <label for="subspecies_2">Subspecies 2:</label>
+            <input type="text" id="subspecies_2" name="subspecies_2">
+
+            <label for="commonNames">Common Names:</label>
+            <input type="text" id="common-names" name="commonNames">
+
+            <label for="synonym">Synonym:</label>
+            <input type="text" id="synonym" name="synonym">
+             
+            <label for="distribution">Distribution:</label>
+            <input type="text" id="distribution" name="distribution">
+
+            <label for="diagnosis">Diagnosis:</label>
+            <input type="text" id="diagnosis" name="diagnosis">
+
+            <label for="comments">Comments:</label>
+            <input type="text" id="comments" name="comments">
+	
+            <label for="etymology">Etymology:</label>
+            <input type="text" id="etymology" name="etymology">
+
+            <label for="reproduction">Reproduction:</label>
+            <input type="text" id="reproduction" name="reproduction">
+             
+            <label for="subspecies_finder">Subspecies Finder:</label>
+            <input type="text" id="subspecies_finder" name="subspecies_finder">
+            
+            <label for="subspecies_year">Year:</label>
+            <input type="number" id="subspecies_year" name="subspecies_year">
+            <label for="Specimens">Specimens:</label>
+            <input type="text" id="specimen" name="specimen">
+            <label for="External_Links">External Links:</label>
+            <input type="text" id="external_link" name="external_links">
+            <input type="submit" value="Add Reptile">
+             <button onclick="window.history.back();">Go Back</button>
+        </form>
+    </div>
+
+    <script src="AddReptileScript.js"></script>
+</body>
+</html>

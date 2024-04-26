@@ -1,0 +1,92 @@
+body {
+    background-color: #F5F5DC;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    font-weight: bold;
+    font-size: clamp(35px, 5vw, 60px);
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: clamp(35px, 5vw, 60px);
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+h3 {
+    font-size: clamp(10px, 5vw, 25px);
+    line-height: 1.6;
+    font-weight: lighter;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+p {
+    font-size: clamp(8px, 5vw, 16px);
+    line-height: 1.6;
+    font-weight: lighter;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+#bottom {
+    font-size: clamp(8px, 5vw, 16px);
+    line-height: 1.6;
+    font-weight: lighter;
+    margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+table {
+    width: fit-content;
+    border-collapse: collapse;
+    text-align: left;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 3%;
+}
+
+caption {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 2px solid black;
+}
+
+th,
+td {
+    padding: 8px;
+    text-align: right;
+    border-bottom: 1px solid black;
+}
+
+thead th {
+
+    font-weight: bold;
+}
+
+tbody th {
+    text-align: left;
+    font-weight: normal;
+}
+
+.total-row th {
+    font-weight: bold;
+}
+
+.total-row td {
+    font-weight: bold;
+    color: red;
+}

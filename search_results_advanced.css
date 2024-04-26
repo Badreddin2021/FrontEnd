@@ -1,0 +1,63 @@
+/* Basic styling for the body to ensure proper margin and font settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F5F5DC; /* Light grey background */
+    color: #333; /* Dark grey text */
+    
+}
+
+/* Container for results */
+#results-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background:#F5F5DC;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    
+}
+
+/* Each result entry */
+.result {
+    padding: 15px;
+    border-bottom: 1px solid #ddd; /* Light grey line between items */
+    transition: background-color 0.3s;
+   
+}
+
+.result:last-child {
+    border-bottom: none; /* No border at the bottom of the last item */
+   
+}
+
+/* Links styling */
+.result a {
+    color: black; /* Consistent link color */
+    display: block; /* Makes the entire div clickable */
+    text-decoration: none; /* No underline */
+    border-radius: 5px; /* Rounded corners for aesthetics */
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+   /
+}
+
+.result a:hover {
+    background-color: #F5F2BA;
+}
+
+/* Heading styling within each result */
+.result h2 {
+    margin: 0;
+    color: #333; /* Dark text for headings */
+    font-size: 1.4em;
+    
+}
+
+/* Paragraph styling within each result */
+.result p {
+    margin: 10px 0 0;
+    font-size: 0.9em;
+    
+}
+

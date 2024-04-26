@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="EditReptile.css">
+    <title>Edit Reptile Entry</title>
+</head>
+<body>
+    <h1>Edit Reptile Entry</h1>
+    <form id="edit-reptile-form">
+        <input type="number" id="reptile-id" name="reptile-id" placeholder="Enter Reptile ID" required>
+        <button type="button" id="load-reptile-button">Load Reptile</button>
+        <input type="text" id="taxa" name="taxa" placeholder="Enter Taxa">
+        <input type="text" id="subspecies_1" name="subspecies_1" placeholder="Enter Subspecies 1">
+        <input type="text" id="subspecies_2" name="subspecies_2" placeholder="Enter Subspecies 2">
+        <input type="text" id="subspecies_finder" name="subspecies_finder" placeholder="Enter Subspecies Finder">
+        <input type="number" id="subspecies_year" name="subspecies_year" placeholder="Enter Subspecies Year">
+           <div id="common-names-container">
+            <label for="common-names">Common Names:</label>
+            <button type="button" onclick="addCommonName()">Add Common Name</button>
+            <input type="text" name="common_names[]" placeholder="Enter common name">
+        </div>
+        <div id="synonyms-container">
+            <label for="synonyms">Synonyms:</label>
+            <button type="button" onclick="addSynonym()">Add Synonym</button>
+            <input type="text" name="synonyms[]" placeholder="Enter synonym">
+        </div>
+        <div id="distributions-container">
+           <label for="distributions">Distributions:</label>
+            <button type="button" onclick="addDistribution()">Add Distribution</button>
+       </div>
+       <div id="comments-container">
+       <label for="comments">Comments:</label>
+       <button type="button" onclick="addComment()">Add Comment</button>
+        </div>
+       <div id="Etymology-container">
+       <label for="etymologies">Etymology:</label>
+       <button type="button" onclick="addEtymology()">Add Etymology</button>
+        </div>
+       <div id="specimens-container">
+       <label for="specimens">Specimen:</label>
+       <button type="button" onclick="addSpecimen()">Add Specimen</button>
+        </div>
+        <div id="externals-container">
+       <label for="externals">External Links:</label>
+       <button type="button" onclick="addExternal()">Add External</button>
+        </div>	 	 
+        <div id="diagnoses-container">
+        <label for="diagnoses">Diagnoses:</label>
+        <button type="button" onclick="addDiagnosis()">Add Diagnosis</button>
+        </div>	 	 
+        <!-- Add other fields as necessary -->
+        <button type="submit">Update Reptile</button>
+        <button onclick="window.history.back();">Go Back</button>
+    </form>
+
+    <div id="response-message"></div>
+    <script src="EditReptileScript.js"></script>
+  
+</body>
+</html>
