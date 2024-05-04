@@ -5,7 +5,7 @@ document.getElementById('load-reptile-button').addEventListener('click', functio
         return;
     }
     
-    fetch(`http://cmsc508.com:5000/reptiles/${reptileId}`)
+   fetch(`http://cmsc508.com:5000/reptiles/${reptileId}`)
         .then(response => {
             if (!response.ok) {
                 throw new Error('Reptile not found');
